@@ -1,0 +1,112 @@
+package {
+    default_applicable_licenses: ["prebuilts_host_sdk-build-tools_license"],
+}
+
+license {
+    name: "prebuilts_host_sdk-build-tools_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+cc_prebuilt_binary {
+    name: "aapt",
+    srcs: ["bin/aapt"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "aapt2",
+    srcs: ["bin/aapt2"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "aidl",
+    srcs: ["bin/aidl"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "split-select",
+    srcs: ["bin/split-select"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "zipalign",
+    srcs: ["bin/zipalign"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "dexdump",
+    srcs: ["bin/dexdump"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "bcc_compat",
+    srcs: ["bin/bcc_compat"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "llvm-rs-cc",
+    srcs: ["bin/llvm-rs-cc"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+sh_binary_host {
+    name: "apksigner",
+    src: "bin/apksigner",
+}
+
+sh_binary_host {
+    name: "d8",
+    src: "bin/d8",
+}
+
+java_import_host {
+    name: "apksigner-jar",
+    jars: ["lib/apksigner.jar"],
+}
+
+java_import_host {
+    name: "d8-jar",
+    jars: ["lib/d8.jar"],
+}
+
+java_import {
+    name: "core-lambda-stubs",
+    jars: ["lib/core-lambda-stubs.jar"],
+    host_supported: true,
+}

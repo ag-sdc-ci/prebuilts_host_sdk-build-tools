@@ -101,6 +101,11 @@ java_import_host {
 }
 
 java_import_host {
+    name: "apksig",
+    jars: ["lib/apksigner.jar"],
+}
+
+java_import_host {
     name: "d8-jar",
     jars: ["lib/d8.jar"],
 }

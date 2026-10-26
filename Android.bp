@@ -85,6 +85,26 @@ cc_prebuilt_binary {
     device_supported: false,
 }
 
+sh_binary_host {
+    name: "apksigner",
+    src: "bin/apksigner",
+}
+
+sh_binary_host {
+    name: "d8",
+    src: "bin/d8",
+}
+
+java_import_host {
+    name: "apksigner-jar",
+    jars: ["lib/apksigner.jar"],
+}
+
+java_import_host {
+    name: "d8-jar",
+    jars: ["lib/d8.jar"],
+}
+
 java_import {
     name: "core-lambda-stubs",
     jars: ["lib/core-lambda-stubs.jar"],

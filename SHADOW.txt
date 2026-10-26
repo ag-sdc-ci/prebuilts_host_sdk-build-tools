@@ -2,5 +2,5 @@ shadow prebuilt repo: sdk-build-tools (host)
   package: android-sdk-build-tools 37.0.0-2 (Arch Linux / CachyOS)
   upstream: platform/build + platform/frameworks/base + platform/system/tools
   api-level: universal (Android 17 / API 37 baseline)
-  deliverables: bin/{aapt,aapt2,aidl,apksigner,d8,dexdump,split-select,zipalign,bcc_compat,llvm-rs-cc}, lib/{apksigner.jar,d8.jar,core-lambda-stubs.jar}, lib64/{libc++.so,libLLVM_android.so,libclang_android.so}
-  date: 2026-10-25
+  deliverables: bin/{aapt,aapt2,aidl,apksigner,d8,dexdump,split-select,zipalign,bcc_compat,llvm-rs-cc}, lib/{apksigner.jar,d8.jar,core-lambda-stubs.jar}, lib64/{libc++.so,libLLVM_android.so,libclang_android.so}, libaidlmetadata_headers, aidl-analyzer-main
+  date: 2026-10-26
